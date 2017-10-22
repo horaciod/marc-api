@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Lista de  #{title}
+  
+
+    table 
+
+        for usuario in usuarios
+            tr
+                td= usuario.idusuario
+                td(align="center")= usuario.login
+                
+
+
+     
+  
+
+     
+
+     
+        
+    
+  

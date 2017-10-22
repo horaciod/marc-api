@@ -1,0 +1,12 @@
+extends layout
+
+block content
+        h1 Ficha de registros de catálogo
+        table 
+            for reg in regs
+                tr
+                    td= reg.identificador
+                    td
+                        a.btn.btn-default(href="/catalogo/get/#{reg.identificador}")= reg.titulo
+                        
+                    

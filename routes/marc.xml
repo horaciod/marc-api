@@ -1,0 +1,51 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+ <record>
+  <leader>00559nam#a22002177a#4500</leader>
+  <controlfield tag="001">OSC000091</controlfield>
+  <controlfield tag="003">OSC</controlfield>
+  <controlfield tag="005">20070604123030</controlfield>
+  <controlfield tag="008">||||||s1963    sp ||||       ||| ||    d</controlfield>
+  <datafield tag="040" ind1="#" ind2="#">
+   <subfield code="a">OSC</subfield>
+   <subfield code="b">spa</subfield>
+   <subfield code="c">OSC</subfield>
+  </datafield>
+  <datafield tag="092" ind1="#" ind2="#">
+   <subfield code="c">301.188.1</subfield>
+   <subfield code="l">L665</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2="#">
+   <subfield code="a">Levin, Howard</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+   <subfield code="a">La automatización y el trabajo adminitrativo.</subfield>
+  </datafield>
+  <datafield tag="260" ind1="#" ind2="#">
+   <subfield code="a">Madrid : </subfield>
+   <subfield code="b">Rialp, </subfield>
+   <subfield code="c">1963.</subfield>
+  </datafield>
+  <datafield tag="300" ind1="#" ind2="#">
+   <subfield code="a">180 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+   <subfield code="a">MECANIZACION</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+   <subfield code="a">ADMINITRACION DE EMPRESAS</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+   <subfield code="a">TECNOLOGIA ELECTRONICA</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+   <subfield code="a">PROCESAMIENTO DE DATOS</subfield>
+  </datafield>
+  <datafield tag="907" ind1="#" ind2="#">
+   <subfield code="a">TEXTO</subfield>
+  </datafield>
+  <datafield tag="930" ind1="#" ind2="#">
+   <subfield code="a">19866</subfield>
+   <subfield code="b">1</subfield>
+  </datafield>
+ </record>
+</collection>
