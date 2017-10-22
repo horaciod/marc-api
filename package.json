@@ -15,6 +15,7 @@
     "marc4js": "0.0.8",
     "marcjs": "^0.1.13",
     "marcrecord": "^1.0.4",
+    "massive": "^4.4.0",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
   }

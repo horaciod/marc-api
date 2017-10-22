@@ -15,4 +15,15 @@ res.render('usuarios', {title:'Usuarios' , usuarios:usuarios});
     
 }) 
 });
+router.get('/get/:id', function(req, res, next) {
+  var id = req.params['id'];
+
+client.query('SELECT  idusuario , login, idbiblioteca from \n\
+ biblio.usuarios where idusuario='+id, (err, resp) => {
+ // console.log(err, res) ;
+ var usuarios = resp.rows ; 
+ res.send(usuarios) ; 
+    
+}) 
+});
 module.exports = router;

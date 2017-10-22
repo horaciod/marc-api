@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const {client} = require('../src/basededatos.js')
-;
-        var marcjs = require('marcjs');
+const {client} = require('../src/basededatos.js');
+var marcjs = require('marcjs');
 var marc4js = require('marc4js');
 var fs = require('fs');
 var marcrecord = require('marcrecord');
@@ -44,7 +43,23 @@ router.get('/get/:identificador', function (req, res, next) {
 
     }
 });
+router.get('/getjson/:identificador', function (req, res, next) {
+    if (req.params['identificador'] != undefined) {
+        console.log(req.params);
 
+        client.query('SELECT  identificador , marcxml ,jmarc->>\'title\' as titulo from \
+ biblio.catalogo where identificador=\'' + req.params['identificador'] + '\' ', (err, resp) => {
+            // console.log(err, res) ;
+
+            res.send(resp.rows);
+
+
+        })
+    } else {
+        res.render('errorcat', {});
+
+    }
+});
 module.exports = router;
 
 function leer(marcxml) {
@@ -76,8 +91,8 @@ function leerarchivo() {
 
     record = registros.nextSync();
     console.log(registros);
-    var campo =  record.getVariableField('245');
-    console.log(campo.getSubfield('a').data); 
+    var campo = record.getVariableField('245');
+    console.log(campo.getSubfield('a').data);
 
 }
 

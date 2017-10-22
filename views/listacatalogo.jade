@@ -7,6 +7,8 @@ block content
                 tr
                     td
                         a.btn.btn-default(href="/catalogo/get/#{reg.identificador}")= reg.identificador
+                     td
+                        a.btn.btn-default(href="/catalogo/getjson/#{reg.identificador}")= "json"    
                     td= reg.titulo
                         
                     
