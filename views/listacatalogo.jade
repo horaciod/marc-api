@@ -2,11 +2,11 @@ extends layout
 
 block content
         h1 Lista de registros de catálogo
-        table 
+        table.table.table-bordered.table-striped 
             for reg in regs
                 tr
-                    td= reg.identificador
                     td
-                        a.btn.btn-default(href="/catalogo/get/#{reg.identificador}")= reg.titulo
+                        a.btn.btn-default(href="/catalogo/get/#{reg.identificador}")= reg.identificador
+                    td= reg.titulo
                         
                     

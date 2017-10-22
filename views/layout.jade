@@ -5,4 +5,12 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
   body
-    block content
+    div.well 
+        h1 Aplicación de prueba de recordmarc, pg, express 
+        a.btn.btn-default(href="/users/list") lista usuarios
+        a.btn.btn-default(href="/catalogo/list") lista registros catálogo
+        a.btn.btn-default(href="/") Home
+      block content
+      
+    div.footer
+        small Horacio Degiorgi - copyleft.
